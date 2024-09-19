@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: #ccc;
+    font-size: 16px;
+    
+}
+header{
+    display: flex;
+    padding: 10px 20px;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0, 0.1, 0.5, rgba(0, 0, 0, 0.1) ;
+    background-color: #fff;
+    position: fixed;/*khi keo van hien menu*/
+    width: 100%;
+}
+.logo{
+    width: 120px;
+    height: 100%;
+    padding-left: 5rem;
+}
+nav ul{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul li{
+    margin: 10px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+}
+.icon{
+    display: flex;
+    margin-right: 10rem;
+}
+.icon div{
+    margin-right: 2rem;
+}
+i{
+    font-size: 22px;
+    margin-left: 10px;
+    padding-right: 10px;
+}
+footer{
+    background-color: #363636;
+    color:white;
+    
+ }
+ .footer{
+     display:flex;
+     justify-content: space-around;
+     padding:2rem 4rem;
+ }
+ h2 {
+     text-transform: uppercase;
+ }
+ .h5 {
+    
+     width: 5rem;
+     content: "";
+     top: 100%;
+     left: 0;
+     border-top: 0.3rem solid #ffffff;
+ }
+ h4{
+     transition:margin-left 0.3s ease;
+ }
+ h4:hover{
+     margin-left: 5px;
+ }
+ main{
+    padding-top: 7rem;
+ }
+ .product{
+    margin-top: 2rem;
+ }
+ .product-container{
+    width: calc(12*100%/18);
+    background-color: #fff;
+    margin: auto;
+ }
+ .banner img{
+     width: 100%;
+ }
+ 
+ .commit{
+    display:flex;
+    justify-content: space-between ;
+    padding-top: 1rem;
+    color:rgb(255, 208, 0);
+ }
+ .commit h5{
+    width: 5rem;
+    content: "";
+    top: 100%;
+    left: 0;
+    border-top: 0.3rem solid #fce307;
+    margin-left:4rem;
+ }
+ .commit h2{
+    padding-left:4rem;
+ }
+ .commit p{
+    padding-right: 4rem;
+   
+ }
+ .list-img{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    padding-bottom: 5rem;
+ }
+ .list-img img{
+    width: 100%;
+    height:250px;
+    padding-bottom: 10px;
+ }
+ .list-row{
+    width:250px;
+ }
+ .res p{
+    font-size: 1.5rem; 
+ }
+ .res del{
+    font-size: 1.5rem; 
+ }
+ .res{
+    text-align: center;
+ }
+ .list-row{
+    border:1px solid black; 
+ }
+ 
+

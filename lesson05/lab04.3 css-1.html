@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Hover</title>
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav ul{
+    list-style: none;
+    display:flex;
+    background-color: #ccc;
+}
+nav ul li{
+    border-right:1x solid red;
+}
+nav ul li:last-child{
+    border-right:0
+}
+nav ul li:hover{
+    background-color: green;
+}
+a{
+    text-decoration:none ;
+}
+nav a{
+    display:block;
+    color:black;
+    padding:.35rem 1rem;
+}
+nav a:hover{
+    color:red;
+}
+    </style>
+</head>
+<body>
+    <nav>
+    <ul >
+        <li><a href="#">Trang chủ</a></li>
+        <li><a href="#">Sản phẩm</a></li>
+        <li><a href="#">Dịch vụ</a></li>
+        <li><a href="#">Hỗ trợ</a></li>
+        <li><a href="#">Liên hệ</a></li>
+    </ul>
+    </nav>
+</body>
+</html>

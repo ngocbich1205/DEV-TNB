@@ -1,0 +1,24 @@
+===> table: tao cau truc bang
+        - border, width, align, cellpacing, cellpadding
+        + thead: vung tieu de bang
+            -tr: dong/ hang
+            -th: cột/ ô
+                ++ colspan: gộp ô theo cột
+                ++ rowspan: gộp ô theo hàng
+                ++tbody: vùng nội dung bảng
+                tr:
+                    th / td:
+                +tfoot: vùng cuối bảng(thống kê)
+    ==>Form
+    -input
+        ++ id, name, value
+        ++ type:
+            text, password, email, tel,number, radio, checbox, file
+            image, button, date, time, saerch, color, range, 
+    -select
+        ++ id, name
+        element: option/ optgroup
+                value
+    -textarea
+        ++ attr: id, name,row
+                
