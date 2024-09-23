@@ -1,0 +1,4 @@
+responsive:
+- thiết kế css để tang html chạy rên các thiết bị khác nhau
+    +@media
+    +Flexbility
