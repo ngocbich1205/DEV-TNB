@@ -1,0 +1,95 @@
+*{
+    margin:0;
+    padding:0;
+}
+html,body{
+    background-image: url(../images/background-tintuc.png);
+    font-size: Gotha-Thin;
+}
+header{
+    display:flex;
+    padding:10px 20px;
+    align-items: center;
+    margin:0 5rem;
+}
+nav ul{
+    display:flex;
+    font-size: 1rem;
+    list-style-type: none;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 30rem;
+}
+nav ul li{
+    margin:10px;
+}
+nav ul li a{
+    color:black;
+    font-weight: bold;
+    text-decoration: none;
+    padding:0 10px;
+}
+.logo{
+    width:100px;
+}
+.news{
+    margin:0 10rem;
+}
+
+.news .transition{
+    display:block;
+    
+}
+.transnews{
+    padding:30px 0;
+}
+.transnews h2{
+    text-align: center;
+}
+.content{
+    display:flex;
+    margin-bottom:20px;
+}
+.col1{
+    margin:0 10px;
+}
+
+.title{
+    color: #3cf735;
+    font-size: 1.5rem;
+    width:70%;
+}
+.desc{
+    font-size: 1rem;
+    width:80%;
+}
+.pagination {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.pagination a {
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+    border: 1px solid #3c6728;
+    margin: 0 3px;
+    border-radius: 4px;
+}
+
+.pagination a:hover {
+    background-color: red;
+}
+.footer {
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem 4rem;
+    background-color: #f0f093;
+    margin-top: 5rem;
+}
+.footer h2 {
+    color: #000;
+    font-family: "Gotham-Thin";
+    font-weight: bold;
+    text-transform: uppercase;
+}
