@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="div1" style="height: 100px; border: solid 1px aqua;width: 300px;">
+        day la mot vai dong cua the div
+        <p id="d1">doan van 1</p>
+        <p>doan van 2</p>
+    </div>
+    <button id="btn1">xoa thanh phan trong div</button>
+    <button id="btn2">an thanh phan trong div</button>
+    <button id="show">hien thi</button>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $("#btn1").click(function(){
+                $("#div1").remove("#d1");
+            })
+            $("#btn2").click(function(){
+                $("#div1").empty();
+            })
+
+            $("#show").click(function(){
+                $("div1").show();
+            })
+        })
+    </script>
+</body>
+</html>

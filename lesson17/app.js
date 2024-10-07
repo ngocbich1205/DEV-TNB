@@ -77,9 +77,6 @@ function editStudent(index) {
     const student = students[index];
     alert(`Thông tin sinh viên:\nMã: ${student.studentId}\nTên: ${student.studentName}\nTuổi: ${student.age}`);
 };
-
-
-
 // Chức năng tìm kiếm sinh viên
 function searchStudent() {
     const searchValue = document.getElementById('searchInput').value.toLowerCase();

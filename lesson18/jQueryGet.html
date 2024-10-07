@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="test">Day la chu p <b>dam</b> cua doan p nay</p>
+    <p><a href="http://facebook.com" id="fb">facebook</a></p>
+    <button id="btn1">show text</button>
+    <button id="btn2">show html</button>
+    <button id="btn3">hien thi gia tri href</button>
+    <input type="text" id="text" value="abc">
+    <button id="btn4">hien thi gia tri trong input</button>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#btn1").click(function(){
+                alert("Hien thi"+$("#test").text());
+            });
+            $("#btn2").click(function(){
+                alert("Hien thi"+$("#test").html());
+            });
+            $("#btn3").click(function(){
+                alert("Hien thi"+$("#fb").attr("href"));
+            });
+            $("#btn4").click(function(){
+                alert("Hien thi"+$("#text").val());
+            });
+
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>day la dong 1</p>
+    <p>day la dong 2</p>
+    <ul>
+        <li>san pham 1</li>
+        <li>san pham 2</li>
+        <li>san pham 3</li>
+    </ul>
+    <button id="btn1">them</button>
+    <button id="btn2">them</button>
+    <button id="btn3">them</button>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#btn1").click(function(){
+                $("p").append("them nua di");
+            });
+            $("#btn2").click(function(){
+                $("ul").append("<li>them li nua di</li>");
+            });
+            $("#btn3").click(function(){
+                $("ul").prepend("<li>them li nua di</li>");
+            });
+        });
+    </script>
+</body>
+</html>
