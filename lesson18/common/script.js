@@ -1,7 +1,6 @@
 $(document).ready(function() {
     let isEditing = false;
-    let editingIndex = null;
-
+    let isEditingIndex = null;
     if (!localStorage.getItem('students')) {
         const initialStudents = [
             { studentId: "SV0001", studentName: "Nguyễn Văn A", age: 20, sex: true, birthDate: "2002-04-23", birthPlace: "HN", address: "25, Vũ Ngọc Phan" },
@@ -11,18 +10,12 @@ $(document).ready(function() {
         ];
         localStorage.setItem('students', JSON.stringify(initialStudents));
     }
-
-    
     function getStudents() {
         return JSON.parse(localStorage.getItem('students')) || [];
     }
-
-    
     function saveStudents(students) {
         localStorage.setItem('students', JSON.stringify(students));
     }
-
-    
     function refreshTable() {
         const students = getStudents();
         $('#studentTable').html('');
@@ -43,8 +36,6 @@ $(document).ready(function() {
             `);
         });
     }
-
-   
     $('#saveStudentForm').submit(function(e) {
         e.preventDefault();
         const students = getStudents();
@@ -61,18 +52,16 @@ $(document).ready(function() {
         if (isEditing) {
             students[editingIndex] = student;
             isEditing = false;
-            editingIndex = null;
+            isEditingIndex = null;
         } else {
             students.push(student);
         }
-
         saveStudents(students);
         refreshTable();
         $('#studentForm').hide();
         $('#saveStudentForm')[0].reset();
     });
 
-    
     $('#addStudentBtn').click(function() {
         $('#studentForm').show();
         $('#formTitle').text('Thêm mới sinh viên');
@@ -80,7 +69,6 @@ $(document).ready(function() {
         isEditing = false;
     });
 
-    
     $(document).on('click', '.editBtn', function() {
         editingIndex = $(this).data('index');
         const students = getStudents();
@@ -97,12 +85,20 @@ $(document).ready(function() {
         isEditing = true;
     });
 
-    
-    $(document).on('click', '.viewBtn', function() {
-        const index = $(this).data('index');
-        const students = getStudents();
-        const student = students[index];
-        alert(`ID: ${student.studentId}\nTên: ${student.studentName}\nTuổi: ${student.age}\nGiới tính: ${student.sex ? 'Nam' : 'Nữ'}\nNgày sinh: ${student.birthDate}\nNơi sinh: ${student.birthPlace}\nĐịa chỉ: ${student.address}`);
+    $(document).on('click','.viewBtn',function(){
+        const index=$(this).data('index');
+        const students=getStudents();
+        const student=students[index];
+        $('#studentID').val(student.studentId);
+        $('#studentName').val(student.studentName);
+        $('#studentAge').val(student.age);
+        $('#studentGender').val(student.sex ? 'true':'false');
+        $('#studentBirthDate').val(student.birthDate);
+        $('#studentBirthPlace').val(student.birthPlace);
+        $('#studentAddress').val(student.address);
+
+        $('#studentForm').show();
+        $('#formTitle').text('Thông tin sinh viên');
     });
 
     //delete

@@ -1,34 +1,39 @@
-* {
+*{
     box-sizing: border-box;
 }
-body,html {
+body,html{
     margin: 0;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
 }
-.container {
-    padding: 1.6rem;
+.container{
     display: flex;
+    margin: auto;
 }
-#studentForm {
+#studentForm{
     display: none;
+    width: 100%;
+
 }
-.action-btn {
+.action-btn{
     margin-right: 5px;
 }
-.search-bar, .sort-bar, .search-btn {
-    margin-bottom: 1.2rem;
-}
 .md-3{
-    display:flex;
+    display: flex;
 }
-.sort-bar {
+.search-bar, .sort-bar, .search-bar{
+    margin-bottom: 1.2rem;
+    margin-left:5px;
+}
+.sort-bar{
     width: 11rem;
 }
-.control-row {
+.control-row{
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+.form-label{
+    width: 30%;
 }
 .right{
     margin-left: 2rem;

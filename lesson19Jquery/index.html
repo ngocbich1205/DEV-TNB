@@ -13,24 +13,19 @@
     <div class="container">
         <div class="left">
             <div class="control-row">
-                <button id="addStudentBtn" class="btn btn-primary">
-                    Thêm mới sinh viên
-                </button>
+                <button id="addStudentBtn" class="btn btn-primary mt-3">Thêm mới sinh viên</button>
                 <form class="d-flex" id="search" role="search" style="width: 80%;">
-                    <input id="enterSearch" type="search" class="form-control sort-bar" placeholder="Search Here" aria-label="search">
-                    <div class="col m-2">
-                        <button class="btn btn-primary" type="submit">Tìm kiếm</button>
-                    </div>
+                    <input type="search" id="enterSearch" class="form-control" placeholder="Nhập để tìm kiếm">
                     <div>
-                        <select class="form-control sort-bar" id="sortSelect">
-                            <option value="none">~Sắp xếp theo~</option>
-                            <option value="nameAsc">Sắp xếp theo tên từ A-Z</option>
-                            <option value="nameDesc">Sắp xếp theo tên từ Z-A</option>
+                        <select class="form-control sort-bar " id="sortSelect">
+                            <option value="none">-Sắp xếp theo-</option>
+                            <option value="nameAsc">Sắp xếp theo tên A-Z</option>
+                            <option value="nameDesc">Sắp xếp theo tên Z-A</option>
                             <option value="ageAsc">Sắp xếp theo tuổi tăng dần</option>
                             <option value="ageDesc">Sắp xếp theo tuổi giảm dần</option>
                         </select>
                     </div>
-                 
+                    <button class="btn btn-primary" type="submit">Tìm kiếm</button>
                 </form>
             </div>
             <table class="table mt-4">
